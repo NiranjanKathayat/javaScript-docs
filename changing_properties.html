@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>changing the properties of a button</title>
+	<script type="text/javascript">
+		function doIt(){
+			document.getElementById('btn').style.width = '300px';
+			document.getElementById('btn').style.height = '100px';
+			document.getElementById('btn').style.background = 'red';
+		}
+	</script>
+</head>
+<body>
+	change this button: <br>
+	<input type="button" name="btn" id="btn" value="click me" onclick="doIt()">
+</body>
+</html>

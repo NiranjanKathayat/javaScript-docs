@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>this is floor and ceiling object: </title>
+	<script type="text/javascript">
+		function floor(){
+			var val = document.getElementById('calcVal0').value;
+			document.getElementById('showMath').value = Math.floor(val);			
+		}
+		function ceiling(){
+			var val = document.getElementById('calcVal0').value;
+			document.getElementById('showMath').value = Math.ceil(val);			
+		}
+
+	</script>
+</head>
+<body>
+	<p>Please enter a value: </p>
+	<p><input type="text" name="name1" id="calcVal0"></p>
+	<p>The resulet is: </p>
+	<p><input type="text" name="name2" id="showMath"></p>
+	<p><input type="radio" name="name3" onclick="floor()">(floor) Floor</p>
+	<p><input type="radio" name="name3" onclick="ceiling()">(ceil) Ceiling</p>
+</body>
+</html>

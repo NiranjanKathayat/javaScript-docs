@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>dates and days docs</title>
+	<script type="text/javascript">
+		function getTheDay(date1){
+			var mydate = new Date(date1);
+			var weekday = new Array(7);
+			weekday[0] = 'sunday';
+			weekday[1] = 'monday';
+			weekday[2] = 'Tuesday';
+			weekday[3] = 'wednesday';
+			weekday[4] = 'thursday';
+			weekday[5] = 'friday';
+			weekday[6] = 'saturday';
+
+			var n = weekday[mydate.getDay()];
+			alert('The day of the week is ' +n+ ' for the following date: ' + mydate);
+		}
+	</script>
+</head>
+<body>
+	<form>
+		Date:<input type="text" name="date1" value="m/dd/year"> <br>
+		<input type="button" name="date2" onclick="getTheDay(date1.value)" value="get elapsed time">
+
+	</form>
+</body>
+</html>

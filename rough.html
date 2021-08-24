@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>this is javascript documents</title>
+	<script type="text/javascript">
+		function getLocationInfo(){
+			var infotxt = '';
+			infotxt = 'browser lacation' + window.location+'<br>';
+			document.getElementById('info').style.font = '12px arial';
+			document.getElementById('info').innerHTML = infotxt;
+		}
+		function changeLocation(){
+			window.location = 'https://www.microsoft.com/';
+		}
+		function replaceLocation(){
+			window.location.replace('http://www.google.com');
+		}
+	</script>
+</head>
+<body>
+	
+	<button name="button1" onclick="getLocationInfo()">get browser info</button><br>
+	<button name="button2" onclick="changeLocation()">change location</button><br>
+	<button name="button3" onclick="replaceLocation()">Replace location</button>
+	<div id="info"></div>
+
+	<button onclick="window.open('concat.html')">this is concat button</button> <br>
+	<input type="button" name="name1" value="This is the another way" onclick="window.open('concat.html')">
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>compare dates docs</title>
+	<script type="text/javascript">
+		function compareDate(date1, date2){
+			var specificDate1 = new Date(date1);
+			var specificDate2 = new Date(date2);
+
+			if (specificDate1.getTime() == specificDate2.getTime()){
+				alert('same');
+			} else{
+				alert('different');
+			}
+		}
+	</script>
+</head>
+<body>
+	<form>
+	<input type="text" name="date1" value="dd/m/year"><br>
+	<input type="text" name="date2" value="dd/m/year"><br>
+	<input type="button" name="button1" value="compare date" onclick="compareDate(date1.value, date2.value)">
+
+	</form>
+</body>
+</html>

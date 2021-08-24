@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Adding list elements using javascript</title>
+	<script type="text/javascript">
+		
+		function addToList(){		
+
+			ss = document.getElementById('input1');
+			
+			var newnode = document.createElement('LI');
+			var textnode = document.createTextNode(ss);
+			newnode.appendChild(textnode);
+			document.getElementById('transportation').appendChild(newnode);
+		}
+		function removeList(){
+			var list = document.getElementById('transportation');
+			list.removeChild(list.childNodes[3]);
+		}
+	</script>
+</head>
+<body>
+	<ul id="transportation"></ul>
+	<h1>Text Management</h1>
+	<input type="text" id="input1" name="name1" > <br>
+	<input type="button" name="name1" value="Add to list" onclick="addToList()">
+	<input type="button" name="name1" value="Remove from list" onclick="removeList()">
+</body>
+</html>

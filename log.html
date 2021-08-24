@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>This is eulers documents</title>
+	<script type="text/javascript">
+		function euler(){
+			document.getElementById('showPro').value = Math.E;
+		}
+		function logarith_2(){
+			document.getElementById('showPro').value = Math.LOG2E;
+		}
+		function logarith_10(){
+			document.getElementById('showPro').value = Math.LOG10E;
+		}
+		function niraj(){
+			alert(Math.E)
+		}		
+				
+	</script>
+
+</head>
+<body>
+	<input type="text" name="mathfunction" id="showPro"> <br>
+	<input type="radio" name="mathfunction" onclick="euler()" value="E">(E) Euler's number e <br>
+	<input type="radio" name="mathfunction" onclick="logarith_2()">(LOG2E) base 2 logarithma of e  <br>
+	<input type="radio" name="mathfunction" onclick="logarith_10()"> (LOG10E) Base 10 logarithms of e <br>
+	<input type="radio" name="mathfunction" onclick="niraj()"> Niranjan
+
+</body>
+</html>

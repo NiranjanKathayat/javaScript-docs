@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Capturing data from a form field in real time </title>
+	<script type="text/javascript">
+		function iceCream(iceCream1){
+			document.getElementById('showMe').value = iceCream1;
+		}
+	</script>
+</head>
+<body>
+	<h1>My favorite icecream flaver is:</h1> <br>	
+	<input type="text" name="name1" id="showMe"> <br>
+	<input type="button" name="name2" value="Submit">
+
+	<h1>Select your favorite ice cream:</h1>
+
+	<input type="radio" name="name3" value="Vanilla" onclick="iceCream(this.value)">Vanilla <br>
+	<input type="radio" name="name3" value="Chocolate" onclick="iceCream(this.value)">chocolate <br>
+	<input type="radio" name="name3" value="strawberry" onclick="iceCream(this.value)">strawberry <br>
+	<input type="radio" name="name3" value="Neopolitan" onclick="iceCream(this.value)">Neopolitan <br>
+	<input type="radio" name="name3" value="Rocky Road" onclick="iceCream(this.value)">Rocky raod <br>
+
+</body>
+</html>

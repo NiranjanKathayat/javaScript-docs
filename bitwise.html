@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>bitwise documents</title>
+	<script type="text/javascript">
+		function bitWise(x,y){
+			x = parseInt(x);
+			y= parseInt(y);
+			alert('The binary representation of the numbers are: '+x.toString(2) +' & ' +y.toString(2));
+			document.write('the bitwise and is ' +(x&y)+ '<br>');
+			document.write('the bitwise XOR is ' +(x^y)+'<br>');
+		}
+		
+	</script>
+</head>
+<body>
+	<form>
+	Number1: <input type="text" name="num1"> <br>
+	Number2: <input type="text" name="num2"> <br>
+	<button onclick="bitWise(num1.value, num2.value)">Bitwise operators</button>
+	</form>
+</body>
+</html>

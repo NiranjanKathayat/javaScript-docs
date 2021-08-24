@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Changing a page background:</title>
+	<script type="text/javascript">
+		function change_color(){
+			document.body.style.background = 'red';
+			document.getElementById('output1').innerHTML = document.body.style.background;
+		}
+		function change_image(){
+			document.body.style.background = 'silver';
+			document.getElementById('output2').innerHTML = document.body.style.background;
+		}
+	</script>
+</head>
+<body>
+	<p>change the color:</p>
+	<button onclick="change_color()">Change Color</button> <br>
+	The value equal: <span id="output1"></span>
+
+	<p>change the background Iamge</p>
+	<button onclick="change_image()">Change Background</button> <br>
+	value equal: <span id="output2"></span>
+</body>
+</html>

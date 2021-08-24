@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Creating an automated redirect</title>
+	<script type="text/javascript">
+		setInterval(function() {countDown();}, 1000);
+		function countDown(){
+			var count = document.getElementById('counter');
+
+			if (parseInt(count.innerHTML) <= 0){
+				location.href = 'cap_data.html';
+			}
+			count.innerHTML = parseInt(count.innerHTML)-1;
+		}
+	</script>
+</head>
+<body>
+	Redirect in <span id="counter">10</span> second(s)
+</body>
+</html>

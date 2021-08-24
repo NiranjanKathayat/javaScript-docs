@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>converting a string to lower and upper case</title>
+	<script type="text/javascript">
+		function tryIt(){
+			var string1 = document.getElementById('input1').value;
+			var upper = string1.toUpperCase();
+			var lower = string1.toLowerCase();
+
+			document.getElementById('output').innerHTML = 'Uppercase letter: '+upper+'<br>'+ 'Lowercase letter: '+lower;
+		} 
+	</script>
+</head>
+<body>
+	<textarea rows="10" cols="40" placeholder="write something" id="input1"></textarea> <br>
+	<button onclick="tryIt()">Upper and lower case</button>
+	<p id="output"></p>
+
+</body>
+</html>

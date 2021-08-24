@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>changing an element css styles</title>
+	<script type="text/javascript">
+		function doIt(){
+			var id = document.getElementById('input1').value;
+			var att = document.getElementById('input2').value;
+			var val = document.getElementById('input3').value;
+
+			var cssString = 'document.getElementById("' +id+ '" ).style.' + att+ '=" ' + val + '"\;';
+			
+			eval(cssString); 
+	
+		}
+	</script>
+</head>
+<body>
+	<div id="redbox" style="width: 200px; height: 100px; background-color: red; ">Id = 'redbox'</div>
+
+	Id 'image1': 
+	<img src="../my_pic.png" id="image1">
+	<p>Id text1</p>
+	<span id="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span> <br>
+
+	<input id="input1" type="text" name="name1" placeholder="enter an Id"> <br>
+	<input id="input2" type="text" name="name2" placeholder="enter a css style attribute"> <br>
+	<input id="input3" type="text" name="name3" placeholder="enter a value"> <br>
+	<input onclick="doIt()" type="button" name="name4" value="go"><br>
+
+
+</body>
+</html>

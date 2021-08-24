@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>using javascript big and small with strings:</title>
+	<script type="text/javascript">
+		function tryIt(){
+			var string1 = 'This is normal text';
+			var string2 = 'This is bigger text';
+			var string3 = 'This is smalller text';
+			var bigger = string2.big();
+			var smaller = string3.small();
+			var result = document.getElementById('output').innerHTML = 'Normal text: '+string1+'<br> Bigger text: '+bigger+'<br> smaller text: '+ smaller;
+		}
+	</script>
+</head>
+<body>
+	<p id="output"></p>
+	<button onclick="tryIt()">Try it</button>
+</body>
+</html>

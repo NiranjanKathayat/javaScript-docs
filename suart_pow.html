@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>squart and power </title>
+	<script type="text/javascript">
+		function square(){
+			var val = document.getElementById('input1').value;
+			document.getElementById('output').value = Math.sqrt(val);
+		}
+		function power(){
+			var val1 = document.getElementById('input1').value;
+			var val2 = document.getElementById('input2').value;
+			document.getElementById('output').value = Math.pow(val1,val2);
+		}
+	</script>
+
+</head>
+<body>
+	<p>Enter the value: </p>
+	<p><input type="text" name="name1" id="input1"> <input type="text" id="input2"></p>
+	<p>result:</p>
+	<p><input type="text" name="name2" id="output"></p>
+	<p><input type="radio" name="name3" onclick="square()">(sqrt) squart root(x)</p>
+	<p><input type="radio" name="name3" onclick="power()">(pow)X to the power of Y (x,y)</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Remove a div container using removechild</title>
+	<style type="text/css">
+		#tempDiv {
+			width: 400px;
+			height: 300px;
+			background-color: red;
+		}
+	</style>
+	<script type="text/javascript">
+		function removeDiv(){
+			var re = document.getElementById('tempDiv');
+			re.parentNode.removeChild(re);
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="name1" onclick="removeDiv()" value="Remove" id="input1">
+	<div id="tempDiv"></div>
+</body>
+</html>

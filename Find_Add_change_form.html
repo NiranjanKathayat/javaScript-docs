@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>find, add, or change form elements</title>
+	<script type="text/javascript">
+		function doIt(){
+			var elem = document.forms[0];
+			elem[0].value = 'Niranjan';
+			elem[3].value = '71324253';
+			alert(elem.length);
+			document.getElementById('output').innerHTML = elem.length +'<br>';
+
+			for (i = 0; i < elem.length; i++){
+				var formData = new Array;
+				formData[i] = elem[i].value + '<br>';
+				document.getElementById('output').innerHTML += formData[i]; 
+			}
+
+		}
+		
+	</script>
+</head>
+<body>
+	<form>
+		Name: <input type="text" name="name1" placeholder="enter your name"> <br><br>
+		Address: <input type="text" name="name2" placeholder="enter your address"> <br><br>
+		Email: <input type="text" name="name3" placeholder="enter your email"> <br><br>
+		Phone: <input type="text" name="name4" placeholder="enter your phone"> <br><br>
+		<button type="button" onclick="doIt()" id="input">Go</button> <br><br>
+		<div id="output"></div>
+		<!-- <span id="output"></span> -->
+	</form>
+
+</body>
+</html>

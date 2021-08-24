@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Joining string with concat:</title>
+	<script type="text/javascript">
+		function doIt(){
+			var string1 = document.getElementById('input1').value;
+			var string2 = document.getElementById('input2').value;
+			var result = string1.concat(string2);
+
+			document.getElementById('output').innerHTML = result;
+		}
+	</script>
+</head>
+<body>
+	<textarea id="input1" rows="10" cols="30"></textarea> <br>
+	<textarea id="input2" rows="10" cols="30"></textarea> <br>
+	<button onclick="doIt()">Concat</button> <br>
+	Result:<span id="output"></span>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>log2 and log10 documents</title>
+	<script type="text/javascript">
+		function log2(){
+			document.getElementById('showPro').value = Math.LN2;
+		}
+		function log10(){
+			document.getElementById('showPro').value = Math.LN10;
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="math" id="showPro"><br>
+	<input type="radio" name="math" onclick="log2()">Log2 <br>
+	<input type="radio" name="math" onclick="log10()">Log10 <br>
+</body>
+</html>

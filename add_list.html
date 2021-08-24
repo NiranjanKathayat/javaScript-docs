@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Adding list elements using javascript</title>
+	<script type="text/javascript">
+		var listitem = 0;
+		function addToList(){
+			if (listitem >= 4){
+				listitem =0;
+			}			
+
+			if (listitem == 0){
+				var travelmode = 'phanes';
+			}
+			if (listitem == 1){
+				var travelmode = 'trains';
+			}
+			if (listitem == 2){
+				var travelmode = 'automobiles';
+			}
+			if (listitem == 3){
+				var travelmode = 'boats';
+			}
+			listitem++;
+			var newnode = document.createElement('LI');
+			var textnode = document.createTextNode(travelmode);
+			newnode.appendChild(textnode);
+			document.getElementById('transportation').appendChild(newnode);
+		}
+		function removeList(){
+			var list = document.getElementById('transportation');
+			list.removeChild(list.childNodes[3]);
+		}
+	</script>
+</head>
+<body>
+	<ul id="transportation"></ul>
+	<input type="button" name="name1" value="Add to list" onclick="addToList()">
+	<input type="button" name="name1" value="Remove from list" onclick="removeList()">
+</body>
+</html>

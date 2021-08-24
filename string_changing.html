@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>changing the style of fonts in strings</title>
+	<script type="text/javascript">
+		function tryit(){
+			var string1 = 'This is the bold text';
+			var bold = string1.bold();
+			var string2 = 'This is italic text';
+			var italics = string2.italics();
+			var string3 = 'This is fixed text';
+			var fixed = string3.fixed();
+			var string4 = 'This is strike text';
+			var strike = string4.strike();
+			var original = document.getElementById('output').innerHTML;
+			var result = original + '<br>' +bold+ '<br>' + italics + '<br>' +fixed+ '<br>'+ strike;
+			document.getElementById('output').innerHTML = result;
+		}
+		
+	</script>
+</head>
+<body>
+	<p id="output">This is normal text</p>
+	<button onclick="tryit()">Try it</button>
+</body>
+</html>

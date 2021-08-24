@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Creating a countdown timer</title>
+	<script type="text/javascript">
+		setInterval('howManySleeps()', 1000);
+		function howManySleeps(){
+			thePresent = new Date();
+			christmas = Date.parse('December 24, 2021, 17:00:00');
+			dayLeft = christmas - thePresent;
+			days = Math.floor(dayLeft/(1000*60*60*24));
+			hours = Math.floor(dayLeft/(1000*60*60));
+			mins = Math.floor(dayLeft/(1000*60));
+			secs = Math.floor(dayLeft/(1000));
+
+			dd = days;
+			hh = hours - days*24;
+			mm = mins - hours*60;
+			ss = secs - mins*60;
+
+			document.getElementById('countdown').innerHTML = dd + 'days '+ hh + 'hours ' + mm + 'minutes '+ ss + 'secs';
+		}
+	</script>
+</head>
+<body>
+	Shopping days until christmas: <br>
+	<div id="countdown"></div>
+</body>
+</html>

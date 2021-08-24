@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>split a string into an array</title>
+	<script type="text/javascript">
+		function tryIt(){
+			var string1 = document.getElementById('input1').value;
+			var string2 = document.getElementById('input2').value;
+			
+			var array = string1.split(' ');
+			var length = array.length;
+			var index = array[string2];
+
+
+			document.getElementById('output').innerHTML = 'result:<br> The array is: '+array+ '<br>length: '+ length + '<br>'+ 'array['+string2+']:'+ index;
+		}
+	</script>
+</head>
+<body>
+	<h2>please enter a string:</h2>
+	<textarea id="input1" rows="10" cols="40" placeholder="please write something here:"></textarea> <br>
+	<input type="number" id="input2" name="name1"> <br>
+	
+	<button onclick="tryIt()">click</button> <br>
+	<p id="output"></p>
+</body>
+</html>

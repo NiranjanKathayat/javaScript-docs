@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Changing the value of a button</title>
+	<script type="text/javascript">
+		function tryIt(element){
+			if (element.value == 'Click off'){
+				element.value = 'Click on';
+			}
+			document.getElementById('output').innerHTML = element.value;
+		}
+	</script>
+</head>
+<body>
+	Change the value: <br>
+	<input id="input" onclick="tryIt(this)" type="button" name="name1" value="Click off"> <br>
+	value equals: <span id="output"></span>
+</body>
+</html>

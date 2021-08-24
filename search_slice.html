@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>search string using the slice method</title>
+	<script type="text/javascript">
+		function tryit(){
+			var string1 = document.getElementById('input1').value;
+			var string2 = document.getElementById('input2').value -1;
+			var string3 = document.getElementById('input3').value -1;
+			if (string3>0){
+				var result = string1.slice(string2,string3);
+			} else{
+				var result = string1.slice(string1);
+			}
+			document.getElementById('output').innerHTML = result;
+		}
+	</script>
+</head>
+<body>
+	<textarea id="input1" placeholder="Please write something here" rows="10" cols="40"></textarea> <br>
+	start location: <input id="input2" type="text" name="name1">
+	end location: <input id="input3" type="text" name="name2"> <br> <br>
+	<button onclick="tryit()" onsubmit="return false">search</button> <br>
+
+	The slice of the string is : <span id="output"></span>
+	
+	
+	
+
+
+
+</body>
+</html>
